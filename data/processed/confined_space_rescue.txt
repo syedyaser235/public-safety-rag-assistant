@@ -1,0 +1,70 @@
+SOG 7.8 Confined Space Rescue
+
+Confined Space Rescue
+
+Definitions
+Confined space: A confined space is any area or vessel, which meets all 3 of the following:
+1. Is large enough and so configured that an employee can enter and perform work
+2. Has limited means of entry or exit
+3. Is not designed for continuous occupancy
+
+Permit required confined space: A permit required confined space is defined as a confined space
+which has one or more of the following:
+1. Contains or has a potential to contain a hazardous atmosphere
+2. Contains a material with potential for engulfment
+3. Is so structured that an entrant could become trapped or asphyxiated
+4. Contains any other recognized serious safety or health hazard – i.e. moving
+parts, noise
+
+Recovery mode: Recovery mode is defined as situations where the victim is obviously expired or
+after a period of time during the rescue operation where time, conditions, or other factors have
+reduced the chance for the victim’s survival to minimal.
+
+Rescue mode: Rescue mode is defined as situations where the victim is believed or known to be
+alive. If this is unknown, personnel should operate in the rescue mode until time, conditions, or
+other elements make the chance for survival minimal.
+
+Confined space rescue operations present a significant danger to fire department personnel. The
+safe and effective management of these operations requires special considerations and
+resources. Examples of possible confined spaces includes tunnels, sewers, tanks, process
+vessels, manholes, storm drains, furnaces, silos, and industrial spaces.
+
+The Fire Department functions at the AWARENESS level. Therefore it is the policy of
+the Fire Department that personnel SHALL NOT enter into a confined space. Entry is
+considered to have occurred as soon as any part of an entrant’s body breaks the plane of
+an opening into the space.
+
+Examples of activities and functions appropriate at the AWARENESS level include:
+- Recognition of a confined space incident
+- Recognition of confined space hazards
+- Performing a non-entry retrieval
+- Identifying resource needs
+- Initiating response of operations and/or technician level personnel
+- Establishing scene control and management
+
+Arrival On Scene
+A. A. The first-in unit should position the apparatus appropriately
+B. The first arriving officer should establish command and complete an initial size-up
+including:
+1. Secure any witnesses
+2. Obtain the confined space entry permit and any other available information
+3. Location, number, condition of victims, and length of time in confined space
+4. Utility and other scene hazards – i.e. hazardous materials, low oxygen levels
+5. Type of work being performed in the confined space
+6. Type of PPE being used by victim(s)
+7. Determination of rescue or recovery mode
+8. Determination of additional resources needed
+Scene Safety
+A. Establish hot, warm, and cold zones (utilize barrier tape and natural boundaries)
+B. Ensure that unauthorized/untrained personnel do not enter the confined space
+C. Confirm or implement lock out/tag out
+
+Incident Actions
+A. If victim is attached to a body harness and retrieval line, the rescuers may lift the victim
+from the confined space area
+B. Attempt to establish contact with victim(s)
+C. Establish atmospheric monitoring
+D. Establish ventilation of confined space after atmospheric monitoring
+E. If safe to do so and if it can be accomplished from outside the confined space, shutdown
+non-essential equipment that is located within the confined space
+F. Establish staging area for additional arriving apparatus and personnel

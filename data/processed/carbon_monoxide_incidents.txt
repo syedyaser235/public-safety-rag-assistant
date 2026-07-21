@@ -1,0 +1,62 @@
+SOG 7.7 Carbon Monoxide Incidents
+
+Carbon Monoxide Incidents
+
+Carbon monoxide (CO) is an odorless, tasteless, colorless gas that is deadly. It is a by-product of
+a fuel burning process. Many appliances such as furnaces, kitchen stoves, hot water heaters,
+automobiles, and etc. can produce carbon monoxide. When a faulty or unusual condition exists,
+carbon monoxide may be vented into areas where people are present. Carbon monoxide
+poisoning may be difficult to diagnose, its symptoms are similar to the flu, which may include
+headache, nausea, fatigue and dizzy spells.
+
+Arrival on Scene
+A. Perform a scene size up and establish Command.
+B. Attempt to locate the homeowner or responsible party and begin to gather information as
+to the hazard, potential victims, etc.
+C. Evacuation and treatment of occupants are the first priority.
+
+Scene Safety
+A. Establish hot, warm, and cold zones (utilize barrier tape and natural boundaries if
+necessary)
+B. Ensure that unauthorized/untrained personnel do not enter the hazardous area
+
+Incident Actions
+A. The CO meter should be activated outside of the structure to allow for fresh air
+calibration.
+B. Personnel shall use the CO meter and perform an initial CO level survey. The meter shall
+be used to survey the premises and verify the presence of carbon monoxide.
+C. Personnel shall enter with protective clothing and self-contained breathing apparatus
+(SCBA)
+D. If, at any time during the survey phase, the meters indicate a concentration of CO in
+excess of 20 ppm, or Oxygen by volume of less than 19.5%, then the survey team shall
+actively go on air
+E. Personnel shall initiate a primary search or verify that all occupants are outside of the
+structure.
+F. If occupants are showing signs of CO exposure, have EMS personnel treat them per their
+protocols and transport.
+G. Personnel should determine if the residential CO detector is in the low battery mode or
+alarm mode.
+1. A reading of 9 PPM or less does not require the evacuation of the premises:
+a. Recommend the occupant, check their CO detector per
+manufacturer recommendations.
+b. Attempt to reset the detector.
+c. Inform occupants that if detector activates again, call 911. 2. Any reading above 9 PPM but less than 100 PPM shall be considered above
+normal, and potentially dangerous to the occupants:
+a. Recommend that all occupants leave the premises and begin
+ventilation.
+b. Determine the source of the CO and shut down the appliance.
+c. Once the premises have been reduced to a safe level of CO, the
+premises may be occupied at the discretion of the occupant.
+d. Attempt to reset the detector
+e. Inform occupants that if the detector activates again, call 911. f. Inform the occupants of the actions that have taken place and that
+they should notify the appropriate resources for assistance
+3. Emergency Operations Reading of 100 PPM or greater:
+a. Order the occupants to leave the premises immediately.
+b. Determine the source of the carbon monoxide and shut down the
+appliance.
+c. Call for the Utility/Gas Company to respond to the scene if necessary
+d. Ventilate the structure and reduce CO to a safe level.
+e. Once the carbon monoxide level is safe the structure may be
+occupied at the discretion of the occupant.
+f. Inform the occupants of the actions that have taken place and they
+should notify the appropriate resources for assistance

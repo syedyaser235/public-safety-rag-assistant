@@ -1,0 +1,85 @@
+SOG 7.6 Natural Gas Incidents
+
+Natural Gas Incidents
+
+Natural gas (Methane) is extremely flammable, colorless, odorless, and lighter than air.
+Mercaptan, with an odor of rotten eggs, is added to natural gas to help indicate its presence. The
+flammable range of natural gas is 4% Lower Explosive Limit (LEL) to 15% Upper Explosive Limit
+(UEL) by volume. Natural gas can displace oxygen and cause asphyxiation in certain settings,
+particularly confined spaces. The presence of natural gas in its flammable range should be
+evaluated with the use of a Combustible Gas Indicator (CGI) (on the Engine, Utility Company, or
+HAZMAT response unit.)
+
+Fires involving natural gas should be controlled by stopping the flow of gas. In most cases,
+burning natural gas should not be extinguished as this would change the situation from a visible
+to an invisible hazard with an explosive potential. Natural gas is much lighter than air and will
+usually dissipate rapidly in the outside environment. Inside buildings, however, it tends to pocket,
+particularly in attics and dead space. Because natural gas is lighter than air, if confined it has the
+potential for a catastrophic explosion. Natural gas leaks above ground are much easier to
+manage than below ground leaks.
+
+Arrival on Scene
+A. Perform a scene size up and establish Command.
+B. The Emergency Response Guidebook shall be used to identify staging and isolation
+zones.
+C. Consciously avoid committing apparatus or personnel to a dangerous situation or a
+situation that could become dangerous due to gas migration.
+D. Attempt to locate the homeowner or responsible party and begin to gather information as
+to the hazard, potential victims, etc.
+E. Notify appropriate Utility/Gas Company and HAZMAT(if needed) for assistance and
+response
+F. Evacuate the area, working towards an “All Clear” of the immediate area and surrounding
+structures if necessary.
+G. Isolate the area/scene – Establishment of a “Hot Zone” is critical.
+H. Deny entry.
+I. If incident is determined to be a natural gas leak, ensure that personnel safety practices
+are in place when working in the Hot Zone including the wearing of the appropriate PPE
+with SCBA, face piece donned and breathing air. Establish a water supply and ensure
+that a charged hose line is in place. This line must be attended when Utilty/Gas Company
+or HAZMAT personnel are securing the leak.
+J. Approach to the incident should be from upwind. Use wind speed/direction from dispatch
+and observe any on-scene indicators (trees, flags and any other items that may show
+direction).
+
+Scene Safety
+A. Establish hot, warm, and cold zones (utilize barrier tape and natural boundaries)
+B. Ensure that unauthorized/untrained personnel do not enter the hazardous area
+
+Incidents with an Explosion- Incident Actions
+Units arriving on scene of an explosion must consider natural gas as a possible cause.
+Underground leaks may allow gas to travel considerable distances before entering a structure
+through the foundation, around pipes or through void spaces. Until it can be determined that the
+area is safe from danger of further explosions:
+A. Evacuate all civilians
+B. Keep the number personnel in the area to the minimum number necessary to stabilize
+the situation
+C. Don’t rely on gas odor- Use a CGI to check all suspected areas
+D. Check areas systematically using a CGI- Start outside of the area of the explosion and
+move into the area until readings indicate a detectable concentration.
+E. Map the readings for the affected area and relay it to Command
+F. If the gas concentration is encountered inside, adjacent to, or underneath any building,
+secure all possible sources of ignition in the affected area.
+G. Cut electricity from outside the affected area to avoid arcing.
+H. Ventilate buildings where gas is found with explosion-proof blowers only.
+I. Never enter inside when CGI is alarming for LEL.
+J. Ventilate first and wait for Utility/Gas Company or HAZMAT.
+K. Command shall provide for effective interaction between gas company personnel and the
+fire department.
+L. Command must ensure the safety and stability of the structure.
+
+Incidents with No Explosion- Incident Actions
+Calls for “gas leak”, gas odor”, “broken gas line” and similar situations may range from minor to a
+potentially major incident. All these should be approached as potentially dangerous situations.
+The following actions must occur:
+A. The first arriving unit with a CGI shall obtain a sufficient number of gas concentration
+readings for Command to evaluate the hazard and take appropriate action. (With these
+readings, a proper isolation perimeter can be established.)
+B. In all cases, personnel shall take whatever actions are necessary to provide for life safety
+and property conservation.
+C. Provide standby protection with a charged 1-3/4 inch hand line (fog nozzle) and a dry
+chemical extinguisher.
+D. Crews shall be in full protective equipment and SCBA.
+E. Crews should position themselves upwind.
+F. Evacuate any civilians in the area of escaping gas.
+G. Attempt to locate the source of the gas and any shutoff devices available to isolate and
+control the leak, i.e. water heater, stove, dryer, etc.

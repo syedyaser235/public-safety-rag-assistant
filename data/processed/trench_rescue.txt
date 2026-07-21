@@ -1,0 +1,58 @@
+SOG 7.9 Trench Rescue
+
+Trench Rescue
+
+Definitions
+Recovery mode: Recovery mode is defined as situations where the victim is obviously expired or
+after a period of time during the rescue operation where time, conditions, or other factors have
+reduced the chance for the victim’s survival to minimal.
+
+Rescue mode: Rescue mode is defined as situations where the victim is believed or known to be
+alive. If this is unknown, personnel should operate in the rescue mode until time, conditions, or
+other elements make the chance for survival minimal.
+
+Trench: An excavation in which the depth is greater than the width and is less than 15 feet wide.
+
+Trench rescue operations present a significant danger to fire department personnel. The safe and
+effective management of these operations requires special considerations and resources.
+
+The Fire Department functions at the AWARENESS level. Therefore it is the policy of
+the Fire Department that personnel SHALL NOT enter into an unsafe trench or
+excavation.
+
+Examples of activities and functions appropriate at this level include:
+- Recognition of a trench collapse incident
+- Identifying resource needs
+- Initiating response of operations and/or technician level personnel
+- Establishing scene control
+
+Arrival on Scene
+A. The first-in unit should position the apparatus a minimum of 50’ from the location of the
+trench collapse. Additional arriving units should initially stage a minimum of 150’ from the
+location.
+B. The first arriving officer should establish command and complete an initial size-up
+including:
+1. Secure any witnesses
+2. Location, number, condition of victims and how long buried
+3. Depth of trench
+4. Utility and other scene hazards
+5. Determination of rescue or recovery mode
+6. Determination of additional resources needed
+
+Scene safety
+A. Establish hot, warm, and cold zones (utilize barrier tape and natural boundaries)
+Hot – 0-100’ from trench
+Warm – 100-500’ from trench
+Cold – 500’ and further from trench
+B. Secure and/or shut down machinery and traffic within 300’ of trench
+C. Implement lock out/tag out
+D. Place ground pads within 4 feet of trench
+
+Incident Actions
+A. If victim is partially buried, lower lifeline and instruct victim to tie around themselves
+B. If indicated, lower ladder into trench - for victim self-rescue only
+C. If victim is buried, mark last known location using dry chemical extinguisher
+D. Establish atmospheric monitoring
+E. Establish ventilation of trench (if necessary)
+F. Relocate any soil piles to be a minimum of 2 feet from trench
+G. Establish staging area for additional arriving apparatus and personnel
