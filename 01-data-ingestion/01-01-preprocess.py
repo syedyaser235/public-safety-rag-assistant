@@ -187,8 +187,9 @@ def split_into_sops(cleaned_text: str, output_dir: Path) -> None:
 
     print(f"\nSuccessfully created {len(sop_blocks)} SOP files.")
 
-if __name__ == "__main__":
 
+def main():
+    
     # # Step 1 Creating a smaller PDF (Knowledge Base) from the Large PDF
     # Only run this once if the fire operations PDF doesn't exist
 
@@ -212,3 +213,8 @@ if __name__ == "__main__":
     # Step 4 Splitting the cleaned text into individual SOPs and saving them to the sops directory
     processed_dir = PROJECT_ROOT / "data" / "processed"
     split_into_sops(cleaned_text, processed_dir)
+
+
+if __name__ == "__main__":
+    main()
+    
