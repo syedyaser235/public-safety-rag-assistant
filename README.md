@@ -10,12 +10,6 @@ The system retrieves the most relevant SOP sections using semantic search and ge
 
 ---
 
-## Demo
-
-*(Add Streamlit deployment link here once deployed)*
-
----
-
 ## Features
 
 - Semantic search using Sentence Transformers
