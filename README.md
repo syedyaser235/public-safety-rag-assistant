@@ -1,293 +1,273 @@
-# 🔥 Public Safety RAG Assistant
+# 🚒 Public Safety RAG Assistant
 
-A Retrieval-Augmented Generation (RAG) application that enables intelligent question answering over Fire Department Standard Operating Guidelines (SOGs).
+An AI-powered Retrieval-Augmented Generation (RAG) application that helps firefighters and emergency responders retrieve relevant Standard Operating Guidelines (SOGs) using natural language.
 
-The system preprocesses Fire SOP documents, converts them into semantic chunks, generates vector embeddings, stores them in a vector database, and retrieves the most relevant procedures to answer user queries accurately.
+Instead of manually searching lengthy SOP documents, users can simply ask a question such as:
 
-> **Current Status:** 🚧 In Development
+> "A worker is trapped inside a manhole. What should firefighters do?"
 
----
-
-# Project Goals
-
-- Parse Fire Department SOP manuals.
-- Extract and clean SOP content.
-- Split documents into meaningful semantic sections.
-- Generate vector embeddings for each section.
-- Store embeddings in a vector database.
-- Retrieve relevant SOPs based on user questions.
-- Provide context-aware responses using an LLM.
+The system retrieves the most relevant SOP sections using semantic search and generates a grounded response using a locally hosted Large Language Model.
 
 ---
 
-# Current Features
+## Demo
 
-✅ Extract selected pages from a Fire SOP PDF
-
-✅ Clean and normalize extracted text
-
-✅ Split the manual into individual SOP documents
-
-✅ Structure-aware chunking (section-based)
-
-✅ Generate metadata-rich chunks
-
-✅ Export chunks to JSON
+*(Add Streamlit deployment link here once deployed)*
 
 ---
 
-# Project Structure
+## Features
 
-```text
-Fire-SOP-RAG/
+- Semantic search using Sentence Transformers
+- FAISS vector database for efficient retrieval
+- Retrieval-Augmented Generation (RAG)
+- Local LLM inference using Ollama
+- Interactive Streamlit interface
+- Response time tracking
+- Displays retrieved SOP sections as references
+
+---
+
+## Tech Stack
+
+| Component | Technology |
+|-----------|------------|
+| Language | Python |
+| UI | Streamlit |
+| Embedding Model | BAAI/bge-small-en-v1.5 |
+| Vector Database | FAISS |
+| LLM | Qwen 2.5 (via Ollama) |
+| Document Processing | PyMuPDF |
+| Data Format | JSON |
+
+---
+
+# Project Architecture
+
+```
+                 Fire Department SOP PDF
+                           │
+                           ▼
+                 Data Ingestion & Cleaning
+                           │
+                           ▼
+                     Document Chunking
+                           │
+                           ▼
+             Sentence Transformer Embeddings
+                           │
+                           ▼
+                    FAISS Vector Index
+                           │
+─────────────────────────────────────────────────────
+                    User asks a question
+                           │
+                           ▼
+                  Query Embedding Creation
+                           │
+                           ▼
+                Semantic Similarity Search
+                           │
+                           ▼
+              Top-K Relevant SOP Sections
+                           │
+                           ▼
+                    Prompt Construction
+                           │
+                           ▼
+               Qwen 2.5 (Ollama Local LLM)
+                           │
+                           ▼
+                  Grounded AI Response
+```
+
+---
+
+# Folder Structure
+
+```
+PUBLIC-SAFETY-RAG-ASSISTANT/
+
 │
+├── 01_data_ingestion/
+├── e02_embeddings/
+├── v03_vector_store/
+├── r04_retrieval/
+├── g05_generation/
+├── services/
 ├── data/
-│   ├── Safety-SOGs.pdf
-│   ├── processed/
-│   │    ├── vehicle_fires.txt
-│   │    ├── vehicle_accidents.txt
-│   │    └── ...
-│   │
-│   └── chunks/
-│        └── fire_sop_chunks.json
-│
-├── data_ingestion/
-│   ├── preprocessFireSop.py
-│   └── chunking.py
-│
-├── embeddings/
-│
-├── retrieval/
-│
 ├── app.py
-│
+├── test_app.py
 ├── requirements.txt
-│
 └── README.md
 ```
 
 ---
 
-# Data Processing Pipeline
+# Pipeline
 
-```text
-Safety-SOGs.pdf
-        │
-        ▼
-Extract Selected Pages
-        │
-        ▼
-Extract Text
-        │
-        ▼
-Clean Text
-        │
-        ▼
-Split into Individual SOPs
-        │
-        ▼
-Extract Metadata
-        │
-        ▼
-Split into Logical Sections
-        │
-        ▼
-Create Semantic Chunks
-        │
-        ▼
-fire_sop_chunks.json
-        │
-        ▼
-Generate Embeddings
-        │
-        ▼
-Vector Database
-        │
-        ▼
-Retriever
-        │
-        ▼
-LLM Response
+### 1. Data Ingestion
+
+- Extract Fire Department SOP pages
+- Clean raw text
+- Separate individual SOPs
+- Save processed text
+
+---
+
+### 2. Chunking
+
+Each SOP is divided into logical sections.
+
+Each chunk stores:
+
+- Chunk ID
+- SOP Number
+- Title
+- Section
+- Text
+
+---
+
+### 3. Embeddings
+
+Each chunk is converted into a dense vector using:
+
+```
+BAAI/bge-small-en-v1.5
+```
+
+The embeddings capture semantic meaning instead of simple keyword matching.
+
+---
+
+### 4. Vector Database
+
+Embeddings are indexed using **FAISS**, enabling fast semantic retrieval using cosine similarity.
+
+---
+
+### 5. Retrieval
+
+When a user asks a question:
+
+- The question is embedded.
+- Similar chunks are retrieved from FAISS.
+- The top matching SOP sections are selected.
+
+---
+
+### 6. Generation
+
+The retrieved SOPs are combined into a prompt and passed to a locally hosted Qwen 2.5 model through Ollama.
+
+The model is instructed to:
+
+- Answer only using retrieved SOPs
+- Avoid hallucinations
+- Generate concise operational guidance
+
+---
+
+# Example Query
+
+```
+Vehicle fire near a school.
+```
+
+### Response
+
+```
+• Secure the incident scene.
+
+• Prevent unauthorized personnel from entering.
+
+• Approach the vehicle from the side.
+
+• Cool the engine compartment.
+
+• Disconnect the battery when safe.
+
+• Follow HazMat procedures if required.
 ```
 
 ---
 
-# Chunking Strategy
+# Installation
 
-Instead of splitting documents into fixed-size chunks, this project uses **structure-aware chunking**.
-
-Each SOP is divided into its logical operational sections such as:
-
-- Introduction
-- Definitions
-- Arrival on Scene
-- Scene Safety
-- Incident Actions
-- Reports and Documentation
-- Clean-Up
-
-This preserves procedural context and produces much more meaningful retrieval results compared to arbitrary text splitting.
-
-Example:
-
-```json
-{
-    "chunk_id": "7.2_2",
-    "sog_id": "7.2",
-    "title": "Vehicle Fires",
-    "section": "Scene Safety",
-    "text": "Ensure that unauthorized personnel do not enter the hazardous area..."
-}
-```
-
----
-
-# Why Structure-Aware Chunking?
-
-Fire SOPs are procedural documents.
-
-If fixed-size chunking were used, important operational procedures could be split across multiple chunks, resulting in incomplete retrieval.
-
-Using section-based chunking provides:
-
-- Better semantic retrieval
-- Clearer context
-- Smaller search space
-- Easier citation of source procedures
-- More accurate LLM responses
-
----
-
-# Current Modules
-
-## preprocessFireSop.py
-
-Responsible for:
-
-- Extracting relevant PDF pages
-- Text extraction
-- Text cleaning
-- Splitting the manual into individual SOP files
-
----
-
-## chunking.py
-
-Responsible for:
-
-- Loading SOP files
-- Reading SOP content
-- Extracting metadata
-- Splitting SOPs into logical sections
-- Creating semantic chunks
-- Exporting chunks to JSON
-
----
-
-# Sample Chunk
-
-```json
-{
-    "chunk_id": "7.6_4",
-    "sog_id": "7.6",
-    "title": "Natural Gas Incidents",
-    "section": "Incidents with an Explosion - Incident Actions",
-    "text": "Units arriving on scene of an explosion must consider natural gas as a possible cause..."
-}
-```
-
----
-
-# Technologies
-
-- Python
-- Pymupdf (Fitz)
-- Regular Expressions (Regex)
-- JSON
-- pathlib
-
-**Planned**
-
-- Sentence Transformers
-- FAISS / ChromaDB
-- LangChain
-- OpenAI / Local LLM
-- Streamlit / FastAPI
-
----
-
-# Future Work
-
-- Generate sentence embeddings
-- Build vector database
-- Implement similarity search
-- Add metadata filtering
-- Build conversational RAG pipeline
-- Add citations in responses
-- Web interface
-- Evaluation pipeline
-- Hybrid Retrieval (Keyword + Vector Search)
-
----
-
-# Getting Started
-
-Clone the repository
+Clone the repository.
 
 ```bash
-git clone https://github.com/<your-username>/Fire-SOP-RAG.git
+git clone https://github.com/<your-username>/public-safety-rag-assistant.git
+
+cd public-safety-rag-assistant
 ```
 
-Install dependencies
+Install dependencies.
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run preprocessing
+Install Ollama.
+
+Download from:
+
+https://ollama.com/
+
+Pull the language model.
 
 ```bash
-python data_ingestion/preprocessFireSop.py
-```
-
-Generate chunks
-
-```bash
-python data_ingestion/chunking.py
+ollama pull qwen2.5:3b
 ```
 
 ---
 
-# Example Use Cases
+# Running the Application
 
-- "How should firefighters respond to a carbon monoxide incident?"
+Start Ollama.
 
-- "What PPE is required during a natural gas leak?"
+```bash
+ollama serve
+```
 
-- "What are the scene safety procedures for vehicle fires?"
+Launch the Streamlit interface.
 
-- "What should be done first at a trench rescue?"
+```bash
+streamlit run app.py
+```
 
 ---
 
-# Project Status
+# Future Improvements
 
-| Module | Status |
-|---------|--------|
-| PDF Extraction | ✅ Complete |
-| Text Cleaning | ✅ Complete |
-| SOP Splitting | ✅ Complete |
-| Metadata Extraction | ✅ Complete |
-| Structure-aware Chunking | ✅ Complete |
-| JSON Export | ✅ Complete |
-| Embedding Generation | 🚧 In Progress |
-| Vector Database | ⏳ Planned |
-| Retrieval Pipeline | ⏳ Planned |
-| LLM Integration | ⏳ Planned |
-| UI | ⏳ Planned |
+- Chat history
+- Conversation memory
+- Hybrid Search (Keyword + Semantic)
+- Reranking
+- Source citation highlighting
+- Multi-document support
+- Voice input
+- Authentication
+- Docker deployment
+- Cloud deployment
+
+---
+
+# Learning Outcomes
+
+This project demonstrates practical implementation of:
+
+- Retrieval-Augmented Generation (RAG)
+- Semantic Search
+- Vector Databases
+- Sentence Embeddings
+- Prompt Engineering
+- Local LLM Inference
+- Streamlit Application Development
 
 ---
 
 # License
 
-This project is intended for educational and research purposes.
+This project is intended for educational and portfolio purposes.
