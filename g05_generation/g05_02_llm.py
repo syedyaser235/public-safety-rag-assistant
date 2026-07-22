@@ -20,7 +20,8 @@ def generate_answer(prompt):
     """
 
     response = ollama.chat(
-        model="mistral",
+        # model="mistral",
+        model="qwen2.5:3b",
         messages=[
             {
                 "role": "user",

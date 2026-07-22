@@ -15,7 +15,7 @@ def main():
 
     print("Building prompt...")
     prompt = build_prompt(question, results)
-
+    print(f"Prompt length: {len(prompt)} characters")
     print("Generating answer...")
     answer = generate_answer(prompt)
     end_time = time.perf_counter()
