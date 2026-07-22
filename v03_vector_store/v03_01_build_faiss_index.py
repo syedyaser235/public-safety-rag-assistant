@@ -8,7 +8,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 EMBEDDINGS_FILE = (PROJECT_ROOT / "data" / "chunks" / "fire_sop_embeddings.json")
 
-INDEX_DIR = PROJECT_ROOT / "03-vector-store"
+INDEX_DIR = PROJECT_ROOT / "v03_vector_store"
 
 INDEX_FILE = INDEX_DIR / "faiss_index.bin"
 
@@ -83,6 +83,19 @@ def save_index(index, metadata):
             indent=4,
             ensure_ascii=False
         )
+
+
+def load_index():
+    """
+    Load the FAISS index and metadata from disk.
+    """
+
+    index = faiss.read_index(str(INDEX_FILE))
+
+    with open(METADATA_FILE, "r", encoding="utf-8") as f:
+        metadata = json.load(f)
+
+    return index, metadata
 
 def main():
     # Step 1: Load the embedded chunks
